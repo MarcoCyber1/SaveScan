@@ -1,7 +1,7 @@
 # SaveScan
 this is simple scan Network
 
-install:
+# install
 
 $ pip install colorama
 
