@@ -14,7 +14,7 @@ print(Fore.LIGHTCYAN_EX + """                                    ....xxxxx...,  
  .       ..'''''      MMMm::.  .      WW888N88888WW     .  . mmMMMMMRXx
       ..' .              MMmm .  .       WWWWWWW   . :. :,miMM    : `    .
    .                .         MMMMmm . .  .  .   ._,mMMMM     :  ' .  :
-               .                    MMMMMMMMMMMMM .  : . '  MAID WITH < MARCO > """)  
+               .                    MMMMMMMMMMMMM .  : . '  MAID WITH < MARCO VICTOR > """)  
 print("Simple Scan Network, enter (help)\n")                                               
 scanner = nmap.PortScanner()   
                                                                                                                                                                                            
