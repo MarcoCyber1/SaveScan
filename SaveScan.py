@@ -14,7 +14,7 @@ print(Fore.LIGHTCYAN_EX + """                                    ....xxxxx...,  
  .       ..'''''      MMMm::.  .      WW888N88888WW     .  . mmMMMMMRXx
       ..' .              MMmm .  .       WWWWWWW   . :. :,miMM    : `    .
    .                .         MMMMmm . .  .  .   ._,mMMMM     :  ' .  :
-               .                    MMMMMMMMMMMMM .  : . '  MAID WITH < MARCO VICTOR > """)  
+               .                    MMMMMMMMMMMMM .  : . '  MAID WITH < MARCO > """)  
 print("Simple Scan Network, enter (help)\n")                                               
 scanner = nmap.PortScanner()   
                                                                                                                                                                                            
@@ -29,9 +29,11 @@ else:
         
 
 target = input(Fore.LIGHTMAGENTA_EX + "ip terget: ")
+print("=====> waiting...")
 
 scanner.scan(target, arguments='-p 1-6553')
-scanner.scan(target, arguments='-sV')                                                                                  
+scanner.scan(target, arguments='-sV')  
+scanner.scan(target, arguments='-F')                                                 
                                                                                                                                                                                                                                              
 for host in scanner.all_hosts():                                                                                                   
     print(Fore.LIGHTGREEN_EX + 'Host: %s (%s)' % (host, scanner[host].hostname()))                                                                     
